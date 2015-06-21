@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+
+  "name": "Envato Notifier",
+  "description": "Show a notification when you get a new sale/comment on envato marketplace. (Powered by Envato API.)",
+  "version": "0.8",
+  "homepage_url": "http://mustafaismail.co",
+
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "128": "images/icon128.png"
+  },
+
+  "background": {
+    "page": "background.html"
+  },
+
+  "browser_action": {
+    "default_icon": "images/icon16.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "identity",
+    "storage",
+    "notifications",
+    "tabs",
+    "https://*.envato.com/*",
+    "http://themeforest.net/*"
+  ],
+
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4TZB5dtZTGslhDe7fKcgFkA+x0jehf3fC6n3XWoiKKfo5Y2LAX0DPk+0+drsIfnofTQhFH2z/HuP8pyeD0qg3hzudAWx/Ll6DSggoN5qUriEa4NHszMcy2oeeQoZREq7NTlAZ9z+SSBS0FTVJHZV85an7lbzbWvXhavFf73WZZ9kKmaXWNGDjoR1p1I4ga6AAT00G2knFE9w9BzoNaP9DsIAhesJbTmvUtN1m6b+Xv1DNk5bXVpzGhN1LDjXVqzSrMcMZFqOLx/qwx8WMHr4scenJnnffLGWZb6ArytWlxLpRyfA0tIAd0nLtUv+jQBXQZ8ktKQA/zMiF2sKuGlqMwIDAQAB"
+
+}

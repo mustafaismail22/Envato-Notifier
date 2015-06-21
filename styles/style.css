@@ -1,0 +1,147 @@
+*, *:before, *:after {
+	box-sizing: inherit;
+	outline: none;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	color: #444;
+	font: 14px 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	overflow: hidden;
+	position: relative;
+	width: 350px;
+	height: 450px;
+	/*-webkit-user-select: none;*/
+}
+
+a {
+	cursor: pointer;
+	color: #01BCFF;
+	text-decoration: none
+}
+
+.page {
+	background-color: #fcfcfc;
+	/*background-image: linear-gradient(to bottom, #fcfcfc, #f2f2f2);*/
+	height: 450px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 350px;
+	z-index: 0;
+	overflow-y: auto;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.top-bar {
+	width: 100%;
+	padding: 15px 15px;
+	background: #01BCFF;
+	color: #fff;
+}
+
+.top-bar h1{
+	font-size: 16px;
+	text-align: center;
+	margin: 0;
+	line-height: 40px;
+}
+
+.userinfo .image {
+	float: left;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	margin-right: 15px;
+	margin-top: 2px;
+}
+
+.userinfo .username {
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.userinfo .earnings {
+	font-size: 13px;
+	font-style: italic;
+	margin-top: 2px;
+	font-weight: bold;
+}
+
+#settings-btn , #back-btn{
+  right: 15px;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  color: #fff;
+  font-size: 18px;
+  padding: 0;
+  position: absolute;
+}
+
+#back-btn{
+	right: auto;
+	left: 15px;
+}
+
+#recent-sales {}
+
+#recent-sales div {
+	white-space: pre;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 14px 15px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#login,
+#loading {
+	z-index: 5;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	background: #01BCFF;
+}
+
+#loading {
+	z-index: 15;
+	background: #fcfcfc;
+	font-size: 16px;
+
+}
+
+#login .btn{
+	background: #fff;
+	color: #222;
+}
+
+
+.checkbox.checkbox-default {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 14px 15px;
+  display: block;
+	cursor: auto;
+}
+
+#logout-btn {
+  display: inline-block;
+  width: 100%;
+  background-color: #ef5350;
+  color: #fff;
+}

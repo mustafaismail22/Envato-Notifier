@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Envato Notifier</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+
+    <div id="app">
+
+      <div id="login" class="page hidden">
+        <button id="login-btn" class="btn waves-button">Sign in with Envato Api</button>
+      </div>
+
+      <div id="main" class="page">
+          <div class="top-bar">
+            <a id="settings-btn" class="btn waves-circle" href="#"><i class="icon-params"></i></a>
+            <div class="userinfo">
+              <img src="images/default_avatar.jpg" alt="avatar" class="image">
+              <div class="username">{{username}}</div>
+              <div class="earnings">{{earnings}}</div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div id="recent-sales"></div>
+      </div>
+
+      <div id="settings" class="page hidden">
+          <div class="top-bar">
+            <a id="back-btn" class="btn waves-circle" href="#"><i class="icon-left-open-big"></i></a>
+            <h1>Settings</h1>
+            <div class="clearfix"></div>
+          </div>
+
+          <div class="checkbox checkbox-default">
+            <label>
+              <input type="checkbox"  name="salesNotification">
+              <span class="ripple"></span><span class="check"></span>
+              Show desktop notification for new sales </label>
+          </div>
+
+          <div class="checkbox checkbox-default">
+            <label>
+              <input type="checkbox"  name="commentNotification">
+              <span class="ripple"></span><span class="check"></span>
+              Show desktop notification for new comments </label>
+          </div>
+
+          <div class="checkbox checkbox-default">
+            <label>
+              <input type="checkbox" name="autoHideNotification">
+              <span class="ripple"></span><span class="check"></span>
+              Auto hide notification after 20 seconds</label>
+          </div>
+
+          <div class="checkbox checkbox-default">
+            <button id="logout-btn" class="btn waves-button">Logout</button>
+          </div>
+
+      </div>
+    
+      <div id="loading"  class="page">
+        <div class="progressbar"></div>
+        <span>loading...</span>
+      </div>
+
+    </div>
+
+    <script src="js/jquery.js"></script>  
+    <script src="js/waves.min.js"></script>  
+    <script src="js/api.js"></script>
+    <script src="js/popup.js"></script>
+
+  </body>
+</html>
+
