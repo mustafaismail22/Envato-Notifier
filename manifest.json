@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "e-notifier",
+  "name": "Envato Notifier",
   "description": "Show a notification when you get a new sale/comment on envato marketplace. (Powered by Envato API.)",
   "version": "0.8",
   "homepage_url": "http://mustafaismail.co",
